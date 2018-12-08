@@ -3,6 +3,7 @@ class UI {
         this.profile = document.getElementById('profile');
     }
 
+    // Show user profile
     showProfile(user) {
         this.profile.innerHTML = `
             <div class="card card-body mb-3">
@@ -31,6 +32,24 @@ class UI {
         `;
     }
 
+    // Show alert message when user is not found
+    showAlert(msg, className) {
+        // Create div
+        const div = document.createElement('div');
+        // Add classes to div
+        div.className = className;
+        // Add text
+        div.appendChild(document.createTextNode(msg));
+        // Get parent
+        const container = document.querySelector('.searchContainer');
+        // Get serach box
+        const search = document.querySelector('.search');
+        // Insert Alert
+        container.insertBefore(div, search);
+        
+    }
+
+    // Clear profile for new search
     clearProfile() {
         this.profile.innerHTML = '';
     }
