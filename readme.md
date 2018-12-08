@@ -7,4 +7,4 @@ This is an application that uses the GitHub API to search for user profiles and 
 * [Bootswatch](https://bootswatch.com/) - Style theme used
 
 ## Credits
-This application was developed as part of Brad Traversy's course ModernJS on udemy
+This application was developed as part of Brad Traversy's course ModernJS on udemyß
